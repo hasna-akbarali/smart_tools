@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>temperature</title>
+    
+    </head>
+    <script>
+            function del()
+                {
+                    document.getElementById("t1").value=" ";
+                     document.getElementById("t2").value=" ";
+                }
+            </script>
+
+<script>
+function temp()
+    {
+        var x=document.getElementById("t1").value;
+         var celc=(x-32)/1.8;
+        document.getElementById("t2").value=celc
+    }
+</script>
+
+
+<script>
+function temp1()
+    {
+        var x=document.getElementById("t2").value;
+        var far=(x*1.8)+32;
+        document.getElementById("t1").value=far
+    }
+</script>
+<body style="background-image:url(bgn_temp.jpg);background-size:100%100%">
+        
+    
+    
+    
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <b style="font-size: 20;color:white" >Fahrenheit</b>&emsp;
+    <input style="font-size: 15" id="t1" placeholder="Fahrenheit" type="text"><br><br>
+    <button style="font-size: 20;background-color:black;color:white  " onclick="temp()">Convert F-C</button>
+    <button style="font-size: 20;background-color:black;color:white" onclick="temp1()">Convert C-F</button>
+    <button style="font-size: 20;background-color:black;color:white" onclick="del()" >Delete</button><br><br>
+    <b style="font-size: 20;color:white " >Celcius</b>&emsp;
+    <input style="font-size: 15" id="t2" placeholder="Celcius" type="text"><br>
+        
+    </body>
+</html>  

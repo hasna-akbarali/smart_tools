@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Weather forecast</title>
+    </head>
+    <script>
+        function abc()
+{
+    var x=document.getElementById("t1").value;
+    window.location.href="https://api.openweathermap.org/data/2.5/weather?q="+x+"&mode=html&appid=bb8c691df3c0edd3dbd9b20123aef7c1"
+}
+    </script>
+    
+    <body style="background-image: url(weat_logo.jpg);background-size:100%100%">
+        <center>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <input style="font-size: 30" id="t1" placeholder="Enter the city name" type="text"><br><br><br><br>
+            <button style="font-size: 30" onclick="abc()">Get current Weather</button>
+        </center>
+       
+    </body>
+</html>

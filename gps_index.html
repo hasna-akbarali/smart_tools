@@ -1,0 +1,25 @@
+<html>
+<head> <title> LOCATION </title> </head>
+<script>
+  function getPosition()
+    {
+        var watchID = navigator.geolocation.getCurrentPosition(onSuccess,onError);
+        function onSuccess(position)
+        {
+            alert('Latitude : '+position.coords.latitude+'\n'+'Longtitude:'+position.coords.longitude+'\n');
+            window.location.href="https://www.latlong.net/c/?lat="+position.coords.latitude+"&long="+position.coords.longitude;   
+        }
+        function onError(error)
+        {
+            alert('code: '+error.code+'\n'+'message:'+error.message+'\n');
+        }
+    }
+</script>
+<body style="background-image: url(gps.gif);background-size:100%100%">
+<center>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<button onclick="getPosition()" style="font-size: 30"> CURRENT POSITION </button>
+    
+</center>
+</body>
+    </html>

@@ -1,0 +1,74 @@
+<html>
+<head>
+    <title>currency converter</title>
+    </head>
+     <script>
+        function abc()
+            {
+                var x=parseFloat(document.getElementById("t1").value);
+                var z=document.getElementById("s1").value;
+              
+                if(z=="U.S")
+            {
+                document.getElementById("t2").value=(x*68.43);
+            }
+
+            if(z=="Euro")
+            {
+                document.getElementById("t2").value=(x*76.97);
+            }
+
+            if(z=="Pound")
+            {
+                document.getElementById("t2").value=(x*85.66);
+            }
+
+            if(z=="Yen")
+            {
+                document.getElementById("t2").value=(x*0.63);
+            }
+
+            if(z=="Dollar")
+            {
+                document.getElementById("t2").value=(x*52.33);
+            }
+
+            if(z=="Sterling")
+            {
+                document.getElementById("t2").value=(x*85.70);
+            }
+
+            if(z=="Franc")
+            {
+                document.getElementById("t2").value=(x*69.16);
+            }
+
+            if(z=="Riyal")
+            {
+                document.getElementById("t2").value=(x*18.24);
+            }
+                  
+            }
+    </script>
+    <body style="background-image: url(bgn.jpg);background-size:100%100%">
+    <center>
+   <br><br><br><br><br><br><br><br><br><br><br><br>
+        <label style="font-family: inherit; font-size: 30"><b>Enter your value to convert</b>
+    <input id="t1"  placeholder="Currency" type="number"><br><br></label>
+        <label style="font-family: inherit; font-size: 30"><b>Select currency to convert</b>
+    <select id="s1" onclick="abc()">
+    <option></option>
+    <option value="U.S">U.S. DOLLAR</option>
+            <option value="Euro">EUROPEAN EURO</option>
+            <option value="Pound">BRITISH POUND</option>
+            <option value="Yen">JAPANESE YEN</option>
+            <option value="Dollar">CANADIAN YEN</option>
+            <option value="Sterling">STERLING POUND</option>
+            <option value="Franc">SWISS FRANC</option>
+            <option value="Riyal">SAUDI RIYAL</option>
+        </select></label><br><br>
+    <label style="font-family: inherit; font-size: 30"><b>Currency value in INR</b></label>
+    <input id="t2" type="number" disabled><br><br>
+    </center>
+    </body>
+</html>
